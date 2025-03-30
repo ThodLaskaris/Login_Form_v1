@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 300;
+  background: #50a3a2;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 10% auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}ç
+
+input:hover {
+  border-color: #50a3a2; /* Αλλάζει το χρώμα του περιγράμματος */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Εφέ σκιάς */
+}
+
+input:focus {
+  outline: none; /* Αφαιρεί το default outline */
+  border-color: #50a3a2; 
+  box-shadow: 0 0 10px rgba(80, 163, 162, 0.8); 
+}
+
+/* Κουμπιά */
+button {
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #50a3a2;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 18px;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s ease;
+}
+
+/* shade efe clickable */
+button:enabled:hover {
+  color: white;
+  background-color: #50a3a2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Εφέ σκιάς */
+}
+
+/* shade efe όταν πατηθεί το κουμπί */
+button:enabled:active {
+  color: white;
+  background-color: #50a3a2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* button disabled χωρις εφε*/
+button:disabled {
+  background-color: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+  box-shadow: none;
+}
